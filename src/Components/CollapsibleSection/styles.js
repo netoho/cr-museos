@@ -10,7 +10,7 @@ export default `
   cursor: pointer;
 }
 .Collapsible .close {
-  color: #A4A4BA;
+  color: ${colors.lightGray};
   float: right;
 }
 `;

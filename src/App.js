@@ -3,6 +3,7 @@ import styles from './styles'
 
 import Calendar from './Components/Calendar'
 import CollapsibleSection from './Components/CollapsibleSection'
+import LoginPage from './Pages/Login'
 
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
@@ -15,12 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="App-header">
-          Encabezado
-        </h1>
-        <CollapsibleSection title="Acuerdos" open>
-          <Calendar defaultView='day'/>
-        </CollapsibleSection>
+        <LoginPage />
         <style jsx global>
           {styles}
         </style>
