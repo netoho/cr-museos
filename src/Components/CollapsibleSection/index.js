@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Collapsible from 'react-collapsible';
-import {title as titleStyles} from "./styles";
+import title1 from "./styles";
 
 export default class extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class extends Component {
     const titleComponent = (
       <h3 className="title">
         {title}
-        <style jsx>{titleStyles}</style>
+        <span className="close">-</span>
       </h3>
     );
     return (

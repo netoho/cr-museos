@@ -5,6 +5,7 @@ let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
 
 export default (props) => (
   <BigCalendar
+    key="calendar"
     {...props}
     events={[]}
     views={allViews}
