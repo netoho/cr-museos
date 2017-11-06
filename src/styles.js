@@ -1,7 +1,10 @@
 import calendar from './Components/Calendar/styles'
 import collapsibleSection from './Components/CollapsibleSection/styles'
+import table from './Components/Table/styles'
+
 import input from './Controls/Input/styles'
 import button from './Controls/Button/styles'
+
 import loginPage from './Pages/Login/styles'
 
 export default `
@@ -51,4 +54,6 @@ ${input}
 ${loginPage}
 
 ${button}
+
+${table}
 `

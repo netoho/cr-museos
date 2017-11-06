@@ -2,6 +2,9 @@ export const colors = {
   primary: '#360202',
   gray: '#4D4D57',
   lightGray: '#A4A4BA',
+  lighterGray: '#F3F3F3',
+  border: '#D9D9D9',
+  textColor: '#4D4D57',
   white: 'white',
 };
 
