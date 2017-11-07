@@ -3,6 +3,8 @@ export const colors = {
   gray: '#4D4D57',
   lightGray: '#A4A4BA',
   lighterGray: '#F3F3F3',
+  calendarText: '#A8A8A8',
+  calendarBorder: '#DFDFDF',
   border: '#D9D9D9',
   textColor: '#4D4D57',
   white: 'white',

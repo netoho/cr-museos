@@ -1,4 +1,5 @@
 import calendar from './Components/Calendar/styles'
+import {custom as calendarCustom} from './Components/Calendar/styles'
 import collapsibleSection from './Components/CollapsibleSection/styles'
 import table from './Components/Table/styles'
 
@@ -46,6 +47,8 @@ html, body, * {
 }
 
 ${calendar}
+
+${calendarCustom}
 
 ${collapsibleSection}
 

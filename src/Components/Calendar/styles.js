@@ -1,3 +1,5 @@
+import { colors } from '../../theme/colors';
+
 export default `
 .rbc-btn {
   color: inherit;
@@ -622,4 +624,24 @@ button.rbc-input::-moz-focus-inner {
   right: -3px;
 }
 
+`
+
+export const custom = `
+.rbc-time-header {
+  display: none;
+}
+.rbc-day-slot .rbc-time-slot, .rbc-time-slot {
+  border: none;
+  background: ${colors.lighterGray};
+}
+.rbc-time-content > * + * > * {
+  border-left: none;
+}
+.rbc-label {
+  padding-top: 10px;
+  color: ${colors.calendarText};
+}
+.rbc-timeslot-group {
+  border-bottom: 1px solid ${colors.calendarBorder};
+}
 `
