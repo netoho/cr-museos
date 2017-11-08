@@ -1,5 +1,5 @@
 import calendar from './Components/Calendar/styles'
-import {custom as calendarCustom} from './Components/Calendar/styles'
+import {custom as calendarCustom, event as calendarEventStyles} from './Components/Calendar/styles'
 import collapsibleSection from './Components/CollapsibleSection/styles'
 import table from './Components/Table/styles'
 
@@ -10,15 +10,11 @@ import loginPage from './Pages/Login/styles'
 
 export default `
 
-html, body, * {
+.App * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Muli', sans-serif;
   box-sizing: border-box;
-}
-
-.App {
-    text-align: center;
 }
 
 .App-logo {
@@ -47,6 +43,8 @@ html, body, * {
 }
 
 ${calendar}
+
+${calendarEventStyles}
 
 ${calendarCustom}
 

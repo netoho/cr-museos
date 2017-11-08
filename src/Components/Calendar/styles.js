@@ -644,4 +644,19 @@ export const custom = `
 .rbc-timeslot-group {
   border-bottom: 1px solid ${colors.calendarBorder};
 }
-`
+.rbc-day-slot .rbc-event {
+  background: ${colors.calendarBorder};
+  color: ${colors.textColor};
+  padding: 10px;
+  border: none;
+  border-radius: 1px
+}
+.rbc-event-label {
+  display: none;
+}
+`;
+
+export const event = `
+.cr-event {
+}
+`;

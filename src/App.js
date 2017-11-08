@@ -65,6 +65,7 @@ class App extends Component {
     ];
     return (
       <div className="App">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
         {!isLogged ? comp : <LoginPage onSubmit={e => {
           e.preventDefault();
           this.setState({isLogged: true})
