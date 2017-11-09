@@ -3,6 +3,8 @@ import styles from './styles'
 
 import Calendar from './Components/Calendar'
 import CollapsibleSection from './Components/CollapsibleSection'
+import TwoLevelPieChart from './Charts/Pie'
+
 import LoginPage from './Pages/Login'
 
 import BigCalendar from 'react-big-calendar';
@@ -26,6 +28,9 @@ class App extends Component {
       isLogged
     } = this.state;
     const comp = [
+      <CollapsibleSection title="Agenda" open key="chart">
+        <TwoLevelPieChart />
+      </CollapsibleSection>,
       <CollapsibleSection title="Agenda" open key="agenda">
         <Calendar defaultView='day'/>
       </CollapsibleSection>,
@@ -41,23 +46,28 @@ class App extends Component {
           <tbody>
           <tr>
             <td>1. Dirección</td>
-            <td>0</td><td>0</td>
+            <td>0</td>
+            <td>0</td>
           </tr>
           <tr>
             <td>1. Dirección</td>
-            <td>0</td><td>0</td>
+            <td>0</td>
+            <td>0</td>
           </tr>
           <tr>
             <td>1. Dirección</td>
-            <td>0</td><td>0</td>
+            <td>0</td>
+            <td>0</td>
           </tr>
           <tr>
             <td>1. Dirección</td>
-            <td>0</td><td>0</td>
+            <td>0</td>
+            <td>0</td>
           </tr>
           <tr>
             <td>1. Dirección</td>
-            <td>0</td><td>0</td>
+            <td>0</td>
+            <td>0</td>
           </tr>
           </tbody>
         </table>
@@ -65,7 +75,7 @@ class App extends Component {
     ];
     return (
       <div className="App">
-        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
         {!isLogged ? comp : <LoginPage onSubmit={e => {
           e.preventDefault();
           this.setState({isLogged: true})
