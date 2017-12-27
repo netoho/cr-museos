@@ -1,6 +1,9 @@
 import { colors } from '../../theme/colors';
 
 export default `
+.Collapsible {
+  width: 100%;
+}
 .Collapsible .title {
   background-color: ${colors.gray};
   font-size: 12px;

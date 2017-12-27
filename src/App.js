@@ -77,6 +77,7 @@ class App extends Component {
     return (
       <div className="App">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
+        <link rel="stylesheet" href="//unpkg.com/flexboxgrid2" />
         <Layout>
           {!isLogged ? comp : <LoginPage onSubmit={e => {
             e.preventDefault();

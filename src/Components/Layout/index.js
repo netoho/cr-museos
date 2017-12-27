@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 import NavBar from "./NavBar";
+import TopMenu from "./TopMenu";
+import SideMenu from "./SideMenu";
 
 class Layout extends Component {
   render() {
@@ -8,7 +10,13 @@ class Layout extends Component {
     return (
       <section className="cr-dashboard">
         <NavBar />
-        {children}
+        <TopMenu />
+        <div className="content">
+          <SideMenu />
+          <main>
+            {children}
+          </main>
+        </div>
       </section>
     );
   }

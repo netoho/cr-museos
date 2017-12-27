@@ -3,7 +3,10 @@ import {custom as calendarCustom, event as calendarEventStyles} from './Componen
 import collapsibleSection from './Components/CollapsibleSection/styles'
 import table from './Components/Table/styles'
 
+import dashboard from './Components/Layout/styles'
 import navBar from './Components/Layout/NavBar/styles'
+import topMenu from './Components/Layout/TopMenu/styles'
+import sideMenu from './Components/Layout/SideMenu/styles'
 
 import input from './Controls/Input/styles'
 import button from './Controls/Button/styles'
@@ -67,5 +70,11 @@ ${button}
 
 ${table}
 
+${dashboard}
+
 ${navBar}
+
+${topMenu}
+
+${sideMenu}
 `

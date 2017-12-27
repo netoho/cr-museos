@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {PieChart, Pie, Sector, Cell} from 'recharts';
+import {PieChart, Pie, Sector, Cell, ResponsiveContainer, Tooltip} from 'recharts';
 
 const data = [{name: 'Queja', value: 4}, {name: 'Petición', value: 3},
   {name: 'Sugerencia', value: 3}, {name: 'Felicitación', value: 20}];
@@ -70,24 +70,15 @@ class TwoLevelPieChart extends Component {
 
   render() {
     return (
-      <PieChart width={800} height={400}>
-        <Pie
-          activeIndex={this.state.activeIndex}
-          activeShape={renderActiveShape}
-          data={data}
-          dataKey="value"
-          cx={300}
-          cy={200}
-          innerRadius={50}
-          outerRadius={80}
-          fill="#8884d8"
-          onMouseEnter={this.onPieEnter}
+      <ResponsiveContainer width="100%" height="auto" aspect={4.0 / 3.0}>
+        <PieChart
         >
-          {
-            data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} key={index}/>)
-          }
-        </Pie>
-      </PieChart>
+          <Tooltip/>
+          <Pie data={data}  fill="white" dataKey='value' label>
+            {COLORS.map((s, i) => <Cell key={i} fill={s} />)}
+          </Pie>
+        </PieChart>
+      </ResponsiveContainer>
     );
   }
 

@@ -18,7 +18,9 @@ export const styleGuideColors = {
   emeraldGreen: "#00891f",
   white: "#d9d9d9",
   paleTeal: "#89d399",
-  charcoalGrey: "#2d2d30"
+  charcoalGrey: "#2d2d30",
+  milkChocolate: "#782b2b",
+  charcoalGreyTwo: "#424247"
 };
 
 const r = Math.round;
