@@ -53,7 +53,7 @@ const renderActiveShape = (props) => {
   );
 };
 
-export default class extends Component {
+class TwoLevelPieChart extends Component {
 
   constructor(props) {
     super(props);
@@ -75,6 +75,7 @@ export default class extends Component {
           activeIndex={this.state.activeIndex}
           activeShape={renderActiveShape}
           data={data}
+          dataKey="value"
           cx={300}
           cy={200}
           innerRadius={50}
@@ -83,7 +84,7 @@ export default class extends Component {
           onMouseEnter={this.onPieEnter}
         >
           {
-            data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
+            data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} key={index}/>)
           }
         </Pie>
       </PieChart>
@@ -92,4 +93,4 @@ export default class extends Component {
 
 }
 
-//TwoLevelPieChart
+export default  TwoLevelPieChart;

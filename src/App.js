@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styles from './styles'
 
 import Calendar from './Components/Calendar'
+import Layout from './Components/Layout'
 import CollapsibleSection from './Components/CollapsibleSection'
 import TwoLevelPieChart from './Charts/Pie'
 
@@ -76,10 +77,12 @@ class App extends Component {
     return (
       <div className="App">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
-        {!isLogged ? comp : <LoginPage onSubmit={e => {
-          e.preventDefault();
-          this.setState({isLogged: true})
-        }}/>}
+        <Layout>
+          {!isLogged ? comp : <LoginPage onSubmit={e => {
+            e.preventDefault();
+            this.setState({isLogged: true})
+          }}/>}
+        </Layout>
         <style jsx global>
           {styles}
         </style>

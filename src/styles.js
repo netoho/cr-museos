@@ -3,12 +3,21 @@ import {custom as calendarCustom, event as calendarEventStyles} from './Componen
 import collapsibleSection from './Components/CollapsibleSection/styles'
 import table from './Components/Table/styles'
 
+import navBar from './Components/Layout/NavBar/styles'
+
 import input from './Controls/Input/styles'
 import button from './Controls/Button/styles'
 
 import loginPage from './Pages/Login/styles'
 
 export default `
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .App * {
   margin: 0;
@@ -57,4 +66,6 @@ ${loginPage}
 ${button}
 
 ${table}
+
+${navBar}
 `
