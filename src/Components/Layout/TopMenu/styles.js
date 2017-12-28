@@ -34,6 +34,7 @@ export default `
   list-style: none;
   flex-direction: row;
   font-size: 0.625rem;
+  justify-content: space-evenly;
 }
 
 .cr-top-menu .menu > ul > li {

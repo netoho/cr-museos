@@ -54,4 +54,8 @@ export default `
   padding: 0.5rem 0 0.5rem 0.5rem;
   display: block;
 }
+
+.cr-side-menu .menu li > a:hover {
+  background-color: ${styleGuideColors.milkChocolate};
+}
 `;
