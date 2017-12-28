@@ -7,7 +7,6 @@ import {
 export default `
 .cr-side-menu {
   display: flex;
-  position: relative;
   flex-direction: column;
   background-color: ${styleGuideColors.deepBrown};
   color: ${colors.white};
@@ -23,12 +22,13 @@ export default `
 .cr-side-menu .title {
   font-size: 0.5625rem;
 	font-weight: 800;
+	padding: 0.5rem 0;
 }
 
 .cr-side-menu .menu-wrapper {
 	border-top: solid 1px ${styleGuideColors.charcoalGreyTwo};
-	padding-left: 2rem;
-	
+	padding: 1rem 0 1rem 2rem;
+	position: relative;
 }
 
 .cr-side-menu .menu-wrapper:last-child {
@@ -36,9 +36,12 @@ export default `
 
 .cr-side-menu .menu-wrapper > header {
   white-space: nowrap;
-  writing-mode: sideways-lr;
   position: absolute;
-  left: 0;
+  right: 42%;
+  top: 50%;
+  text-align: center;
+  transform: rotate(-90deg);
+  width: 100%;
 }
 
 .cr-side-menu .menu {
@@ -48,6 +51,7 @@ export default `
 }
 
 .cr-side-menu .menu li > a {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  display: block;
 }
 `;

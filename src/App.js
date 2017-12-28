@@ -7,6 +7,7 @@ import CollapsibleSection from './Components/CollapsibleSection'
 import TwoLevelPieChart from './Charts/Pie'
 
 import LoginPage from './Pages/Login'
+import Direction from './Pages/Direction'
 
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
@@ -79,7 +80,7 @@ class App extends Component {
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
         <link rel="stylesheet" href="//unpkg.com/flexboxgrid2" />
         <Layout>
-          {!isLogged ? comp : <LoginPage onSubmit={e => {
+          {!isLogged ? <Direction /> : <LoginPage onSubmit={e => {
             e.preventDefault();
             this.setState({isLogged: true})
           }}/>}

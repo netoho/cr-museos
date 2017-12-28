@@ -10,8 +10,10 @@ import sideMenu from './Components/Layout/SideMenu/styles'
 
 import input from './Controls/Input/styles'
 import button from './Controls/Button/styles'
+import simpleSelect from './Controls/SimpleSelect/styles'
 
 import loginPage from './Pages/Login/styles'
+import directionPage from './Pages/Direction/styles'
 
 export default `
 
@@ -20,6 +22,8 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .App * {
@@ -55,26 +59,23 @@ html, body {
 }
 
 ${calendar}
-
 ${calendarEventStyles}
-
 ${calendarCustom}
-
 ${collapsibleSection}
-
-${input}
-
-${loginPage}
-
-${button}
-
 ${table}
 
+
+${loginPage}
+${directionPage}
+
+
+${input}
+${button}
+${simpleSelect}
+
+
 ${dashboard}
-
 ${navBar}
-
 ${topMenu}
-
 ${sideMenu}
 `
