@@ -20,7 +20,8 @@ export const styleGuideColors = {
   paleTeal: "#89d399",
   charcoalGrey: "#2d2d30",
   milkChocolate: "#782b2b",
-  charcoalGreyTwo: "#424247"
+  charcoalGreyTwo: "#424247",
+  whiteTwo: "#f3f3f3"
 };
 
 const r = Math.round;

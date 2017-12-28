@@ -31,8 +31,6 @@ export default `
 
 .cr-top-menu .menu > ul {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
   list-style: none;
   flex-direction: row;
   font-size: 0.625rem;
@@ -48,21 +46,29 @@ export default `
   color: ${colors.white};
   text-decoration: none;
   min-width: 8rem;
-  display: inline-block;
+  display: block;
 }
 
-.cr-top-menu .menu > ul > li > a:hover {
+.cr-top-menu .menu > .ul > .li > a:hover {
   background-color: ${styleGuideColors.milkChocolate};
 }
 
 .cr-top-menu .menu > header {
   font-weight: 600;
   text-align: center;
+  font-size: 0.625rem;
+  font-family: 'Open Sans';
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cr-top-menu .menu > header:hover {
+  background-color: ${styleGuideColors.slateGrey};
 }
 `;
 
 const lol = `
- width: 1.5rem;
-  white-space: nowrap;
   transform: translateY(-100%) rotate(-90deg);
 `;
