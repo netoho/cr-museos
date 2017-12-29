@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import NavBar from "./NavBar";
 import TopMenu from "./TopMenu";
+import TopLeftMenu from "./TopLeftMenu";
 import SideMenu from "./SideMenu";
 
 class Layout extends Component {
@@ -10,7 +11,10 @@ class Layout extends Component {
     return (
       <section className="cr-dashboard">
         <NavBar />
-        <TopMenu />
+        <div className="top-content">
+          <TopLeftMenu />
+          <TopMenu />
+        </div>
         <div className="content">
           <SideMenu />
           <main>

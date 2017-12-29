@@ -9,6 +9,10 @@ export default `
   padding: 1rem;
 }
 
+.cr-dashboard .top-content {
+  display: flex;
+}
+
 .cr-dashboard .content {
   display: flex;
 }

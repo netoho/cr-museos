@@ -21,7 +21,11 @@ export const styleGuideColors = {
   charcoalGrey: "#2d2d30",
   milkChocolate: "#782b2b",
   charcoalGreyTwo: "#424247",
-  whiteTwo: "#f3f3f3"
+  whiteTwo: "#f3f3f3",
+  coolGrey: "#9e9ea7",
+  blackTwo: "#191919",
+  pinkishGrey: "#c7c7c7",
+  charcoalGreyThree: "#424245"
 };
 
 const r = Math.round;

@@ -6,6 +6,7 @@ import table from './Components/Table/styles'
 import dashboard from './Components/Layout/styles'
 import navBar from './Components/Layout/NavBar/styles'
 import topMenu from './Components/Layout/TopMenu/styles'
+import topLeftMenu from './Components/Layout/TopLeftMenu/styles'
 import sideMenu from './Components/Layout/SideMenu/styles'
 
 import input from './Controls/Input/styles'
@@ -77,5 +78,6 @@ ${simpleSelect}
 ${dashboard}
 ${navBar}
 ${topMenu}
+${topLeftMenu}
 ${sideMenu}
 `

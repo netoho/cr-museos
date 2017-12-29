@@ -7,7 +7,7 @@ import {
 export default `
 .cr-top-menu {
   display: flex;
-  height: 12rem;
+  height: 7.5rem;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
@@ -21,7 +21,7 @@ export default `
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  border-right: solid 1px ${styleGuideColors.charcoalGreyTwo};
+  border-right: solid 1px ${styleGuideColors.slateGrey};
 }
 
 .cr-top-menu .menu:last-child {
@@ -38,19 +38,29 @@ export default `
 }
 
 .cr-top-menu .menu > ul > li {
-  width: 1.5rem;
-  white-space: nowrap;
-  transform: translateY(-100%) rotate(-90deg);
+  transform: rotate(180deg);
+  writing-mode: tb;
+  flex: 1;
+  display: flex;
+  height: 5.5rem;
+  min-width: 0;
+  border-left: solid 1px ${styleGuideColors.slateGrey};
+}
+
+.cr-top-menu .menu > ul > li:last-child {
+  border: none;
 }
 
 .cr-top-menu .menu > ul > li > a {
   color: ${colors.white};
   text-decoration: none;
-  min-width: 8rem;
-  display: block;
+  display: inline-table;
+  height: 100%;
+  padding-top: 1rem;
+  margin: auto auto;
 }
 
-.cr-top-menu .menu > .ul > .li > a:hover {
+.cr-top-menu .menu > ul > li:hover {
   background-color: ${styleGuideColors.milkChocolate};
 }
 
@@ -70,6 +80,3 @@ export default `
 }
 `;
 
-const lol = `
-  transform: translateY(-100%) rotate(-90deg);
-`;
