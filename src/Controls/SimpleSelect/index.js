@@ -17,7 +17,7 @@ class SimpleSelect extends Component {
     if (onChange) {
       onChange(selected);
     }
-    this.setState({ selected });
+    this.setState({ selected, hover: false });
   };
 
   mouseEnter = () => this.setState({ hover: true });
