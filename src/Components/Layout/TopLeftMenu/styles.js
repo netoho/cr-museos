@@ -62,7 +62,7 @@ export default `
   color: ${styleGuideColors.pinkishGrey};
   background-color: ${styleGuideColors.charcoalGreyThree};
   padding: 0.25rem 0.5rem;
-  margin-top: 0.75rem;
+  margin-top: 0.25rem;
   white-space: nowrap;
   max-width: 10rem;
   overflow: hidden;
