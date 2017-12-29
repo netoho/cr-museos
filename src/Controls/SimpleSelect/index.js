@@ -12,7 +12,7 @@ class SimpleSelect extends Component {
     };
   }
 
-  selectOption = selected => {
+  selectOption = selected => () => {
     const { onChange } = this.props;
     if (onChange) {
       onChange(selected);
@@ -29,7 +29,7 @@ class SimpleSelect extends Component {
     return options.map((o, i) => (
       <div
         className="cr-simple-select-option"
-        onClick={this.selectOption}
+        onClick={this.selectOption(o)}
         key={i}
       >
         {o.label}
@@ -52,7 +52,6 @@ class SimpleSelect extends Component {
       >
         <div
           className="cr-simple-select-option cr-simple-selected"
-          onClick={this.selectOption}
           style={hoverStyle}
         >
           {selectedComp}

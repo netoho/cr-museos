@@ -21,8 +21,8 @@ export default [
     placeholder: "Activo Fijo",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Activo Fijo",
+        value: "Activo Fijo"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -39,8 +39,8 @@ export default [
     placeholder: "Catalogación de los acervos",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Catalogación de los acervos",
+        value: "Catalogación de los acervos"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -57,8 +57,8 @@ export default [
     placeholder: "Control presupuestal, logros y metas",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Control presupuestal, logros y metas",
+        value: "Control presupuestal, logros y metas"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -75,8 +75,8 @@ export default [
     placeholder: "Dispositivos de Seguridad",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Dispositivos de Seguridad",
+        value: "Dispositivos de Seguridad"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -93,8 +93,8 @@ export default [
     placeholder: "Documentación de procesos",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Documentación de procesos",
+        value: "Documentación de procesos"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -129,8 +129,8 @@ export default [
     placeholder: "Eventos",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Eventos",
+        value: "Eventos"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -147,8 +147,8 @@ export default [
     placeholder: "Opinión de público",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Opinión de público",
+        value: "Opinión de público"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -165,8 +165,8 @@ export default [
     placeholder: "Personal",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Personal",
+        value: "Personal"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -183,8 +183,8 @@ export default [
     placeholder: "Actividades y metas entrega sexenal",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Actividades y metas entrega sexenal",
+        value: "Actividades y metas entrega sexenal"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -201,8 +201,8 @@ export default [
     placeholder: "Relación áreas / proyectos",
     options: [
       {
-        label: "Esquema de comunicación",
-        value: "Esquema de comunicación"
+        label: "Relación áreas / proyectos",
+        value: "Relación áreas / proyectos"
       },
       {
         label: "Actividades sin acuerdos asignados",
@@ -214,5 +214,5 @@ export default [
         value: "Metas sin acuerdos asignados"
       }
     ]
-  },
+  }
 ];
