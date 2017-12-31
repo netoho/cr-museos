@@ -25,7 +25,16 @@ export const styleGuideColors = {
   coolGrey: "#9e9ea7",
   blackTwo: "#191919",
   pinkishGrey: "#c7c7c7",
-  charcoalGreyThree: "#424245"
+  charcoalGreyThree: "#424245",
+  pumpkin: "#e89100",
+  burple: "#6342da",
+  darkSkyBlue: "#528ce0",
+  purpley: "#775ee0",
+  greenyBlue: "#45bf9a",
+  greenyBlueTwo: "#3bb689",
+  cornflowerBlue: "#4277da",
+  pumpkinTwo: "#e27f06",
+  whiteThree: "#e0e0e0"
 };
 
 const r = Math.round;

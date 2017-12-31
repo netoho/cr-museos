@@ -1,20 +1,42 @@
-import calendar from './Components/Calendar/styles'
-import {custom as calendarCustom, event as calendarEventStyles} from './Components/Calendar/styles'
-import collapsibleSection from './Components/CollapsibleSection/styles'
-import table from './Components/Table/styles'
+import calendar from "./Components/Calendar/styles";
+import {
+  custom as calendarCustom,
+  event as calendarEventStyles
+} from "./Components/Calendar/styles";
+import collapsibleSection from "./Components/CollapsibleSection/styles";
+import infoLegend from "./Components/InfoLegend/styles";
+import table from "./Components/Table/styles";
 
-import dashboard from './Components/Layout/styles'
-import navBar from './Components/Layout/NavBar/styles'
-import topMenu from './Components/Layout/TopMenu/styles'
-import topLeftMenu from './Components/Layout/TopLeftMenu/styles'
-import sideMenu from './Components/Layout/SideMenu/styles'
+import dashboard from "./Components/Layout/styles";
+import pieChart from "./Components/PieChart/styles";
+import navBar from "./Components/Layout/NavBar/styles";
+import topMenu from "./Components/Layout/TopMenu/styles";
+import topLeftMenu from "./Components/Layout/TopLeftMenu/styles";
+import sideMenu from "./Components/Layout/SideMenu/styles";
 
-import input from './Controls/Input/styles'
-import button from './Controls/Button/styles'
-import simpleSelect from './Controls/SimpleSelect/styles'
+import input from "./Controls/Input/styles";
+import button from "./Controls/Button/styles";
+import simpleSelect from "./Controls/SimpleSelect/styles";
 
-import loginPage from './Pages/Login/styles'
-import directionPage from './Pages/Direction/styles'
+import loginPage from "./Pages/Login/styles";
+import directionPage from "./Pages/Direction/styles";
+import indicatorsPage from "./Pages/Indicatiors/styles";
+
+const row = `
+.cr-row {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.cr-row > * {
+  margin-right: 1rem;
+}
+
+.cr-row > *:last-child {
+  margin: none;
+}
+`;
 
 export default `
 
@@ -34,40 +56,19 @@ html, body {
   box-sizing: border-box;
 }
 
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-}
-
-.App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-}
-
-.App-title {
-    font-size: 1.5em;
-}
-
-.App-intro {
-    font-size: large;
-}
-
-@keyframes App-logo-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
+${row}
 
 ${calendar}
 ${calendarEventStyles}
 ${calendarCustom}
 ${collapsibleSection}
+${infoLegend}
 ${table}
 
 
 ${loginPage}
 ${directionPage}
+${indicatorsPage}
 
 
 ${input}
@@ -76,8 +77,9 @@ ${simpleSelect}
 
 
 ${dashboard}
+${pieChart}
 ${navBar}
 ${topMenu}
 ${topLeftMenu}
 ${sideMenu}
-`
+`;

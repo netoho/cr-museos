@@ -17,7 +17,7 @@ class Layout extends Component {
         </div>
         <div className="content">
           <SideMenu />
-          <main>
+          <main style={{ padding: '1rem', backgroundColor: 'white' }}>
             {children}
           </main>
         </div>
