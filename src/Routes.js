@@ -5,14 +5,14 @@ import {
   DirectionPage,
   LoginPage,
   DirectionQueryPage,
-  IndicatiorsPage
+  IndicatorsPage
 } from "./Pages";
 
 export default (
   <Switch>
     <Route path="/direction/query" component={DirectionQueryPage} />,
     <Route path="/direction" component={DirectionPage} />,
-    <Route path="/indicators" component={IndicatiorsPage} />,
+    <Route path="/indicators" component={IndicatorsPage} />,
     <Route path="/login" component={LoginPage} />
   </Switch>
 );

@@ -3,6 +3,6 @@ import DirectionQueryPage from "./Direction/Query";
 
 import LoginPage from "./Login";
 
-import IndicatiorsPage from "./Indicatiors";
+import IndicatorsPage from "./Indicatiors";
 
-export { DirectionPage, DirectionQueryPage, LoginPage, IndicatiorsPage };
+export { DirectionPage, DirectionQueryPage, LoginPage, IndicatorsPage };
