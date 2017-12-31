@@ -9,8 +9,7 @@ export default `
   display: flex;
   height: 7.5rem;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
+  flex-grow: 1;
   background-color: ${styleGuideColors.slateGreyTwo};
   color: ${colors.white};
 }
@@ -68,7 +67,7 @@ export default `
   font-weight: 600;
   text-align: center;
   font-size: 0.625rem;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   height: 2rem;
   display: flex;
   justify-content: center;
