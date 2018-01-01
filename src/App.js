@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styles from './styles'
 
-import Layout from './Components/Layout'
 import Routes from './Routes'
 
 import BigCalendar from 'react-big-calendar';
@@ -17,9 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
-        <Layout>
-          {Routes}
-        </Layout>
+        {Routes}
         <style jsx global>
           {styles}
         </style>
