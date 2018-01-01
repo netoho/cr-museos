@@ -6,6 +6,7 @@ import {
 import collapsibleSection from "./Components/CollapsibleSection/styles";
 import infoLegend from "./Components/InfoLegend/styles";
 import table from "./Components/Table/styles";
+import newOpinion from "./Components/NewOpinion/styles";
 
 import dashboard from "./Components/Layout/styles";
 import pieChart from "./Components/PieChart/styles";
@@ -22,6 +23,7 @@ import simpleSelect from "./Controls/SimpleSelect/styles";
 import loginPage from "./Pages/Login/styles";
 import directionPage from "./Pages/Direction/styles";
 import indicatorsPage from "./Pages/Indicatiors/styles";
+import newOpinionPage from "./Pages/Opinions/Create/styles";
 
 const row = `
 .cr-row {
@@ -73,11 +75,13 @@ ${calendarCustom}
 ${collapsibleSection}
 ${infoLegend}
 ${table}
+${newOpinion}
 
 
 ${loginPage}
 ${directionPage}
 ${indicatorsPage}
+${newOpinionPage}
 
 
 ${input}
