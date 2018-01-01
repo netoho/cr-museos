@@ -4,6 +4,7 @@ import {
   event as calendarEventStyles
 } from "./Components/Calendar/styles";
 import collapsibleSection from "./Components/CollapsibleSection/styles";
+import indicatorStatistics from "./Components/IndicatorStatistics/styles";
 import infoLegend from "./Components/InfoLegend/styles";
 import table from "./Components/Table/styles";
 import newOpinion from "./Components/NewOpinion/styles";
@@ -74,6 +75,7 @@ ${calendarEventStyles}
 ${calendarCustom}
 ${collapsibleSection}
 ${infoLegend}
+${indicatorStatistics}
 ${table}
 ${newOpinion}
 
