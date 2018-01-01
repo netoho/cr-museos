@@ -64,7 +64,7 @@ export default `
   padding: 0.25rem 0.5rem;
   margin-top: 0.25rem;
   white-space: nowrap;
-  max-width: 10rem;
+  max-width: 8rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }

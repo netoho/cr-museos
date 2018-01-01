@@ -1,5 +1,28 @@
 import { styleGuideColors } from "../../theme/colors";
 
+export const linksData = [
+  {
+    href: "/direction/query",
+    children: "Atención de acuerdos enviados y recibidos"
+  },
+  {
+    href: "/login",
+    children: "Acuerdos enviados por área/empleado/clasificación"
+  },
+  {
+    href: "/direction",
+    children: "Acuerdos recibidos por área/empleado/clasificación"
+  },
+  {
+    href: "/indicators",
+    children: "Acuerdos recibidos por Eje"
+  },
+  {
+    href: "/",
+    children: "Indicador focos problemáticos"
+  }
+];
+
 export default [
   {
     header: "Enviados",
@@ -155,5 +178,4 @@ export default [
       }
     ]
   }
-
 ];

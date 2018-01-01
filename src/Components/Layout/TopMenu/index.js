@@ -11,7 +11,7 @@ class TopMenu extends Component {
             <ul>
               {m.menus.map((menu, index) => (
                 <li key={index}>
-                  <a href="#">{menu}</a>
+                  <a>{menu}</a>
                 </li>
               ))}
             </ul>

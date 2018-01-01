@@ -34,7 +34,8 @@ export const styleGuideColors = {
   greenyBlueTwo: "#3bb689",
   cornflowerBlue: "#4277da",
   pumpkinTwo: "#e27f06",
-  whiteThree: "#e0e0e0"
+  whiteThree: "#e0e0e0",
+  whiteFour: "#ffffff"
 };
 
 const r = Math.round;

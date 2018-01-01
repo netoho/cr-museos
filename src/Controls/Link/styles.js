@@ -1,17 +1,15 @@
-import { colors } from '../../theme/colors';
+import { colors, shadeBlendConvert, styleGuideColors } from '../../theme/colors';
 
 export default `
-.cr-input {
-  background: ${colors.lightGray};
-  outline: none;
-  border: none;
-  padding: 0.75rem;
-  width: 100%;
-  margin-bottom: 0.75rem;
-  color: ${colors.white};
+.cr-link {
+  background: ${styleGuideColors.slateGreyTwo};
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  color: ${styleGuideColors.white};
+  white-space: nowrap;
 }
 
-.cr-input::placeholder {
-  color: ${colors.white};
+.cr-link:hover {
+  background: ${styleGuideColors.milkChocolate};
 }
 `

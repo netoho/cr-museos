@@ -1,9 +1,17 @@
 import React, { Component } from "react";
-import cn from "classnames";
+import PropTypes from "prop-types";
+import { Link as RouterLink } from "react-router-dom";
 
-export default class extends Component {
+class Link extends Component {
+  static propTypes = {
+    href: PropTypes.string.isRequired,
+    children: PropTypes.any.isRequired
+  };
+
   render() {
-    const { className, ...rest } = this.props;
-    return <input className={cn(className, "cr-input")} {...rest} />;
+    const { href, children } = this.props;
+    return <RouterLink to={href} className="cr-link">{children}</RouterLink>;
   }
 }
+
+export default Link;

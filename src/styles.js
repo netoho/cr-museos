@@ -16,6 +16,7 @@ import sideMenu from "./Components/Layout/SideMenu/styles";
 
 import input from "./Controls/Input/styles";
 import button from "./Controls/Button/styles";
+import link from "./Controls/Link/styles";
 import simpleSelect from "./Controls/SimpleSelect/styles";
 
 import loginPage from "./Pages/Login/styles";
@@ -25,16 +26,22 @@ import indicatorsPage from "./Pages/Indicatiors/styles";
 const row = `
 .cr-row {
   display: flex;
-  margin-top: 1rem;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .cr-row > * {
   margin-right: 1rem;
+  margin-top: 1rem;
 }
 
 .cr-row > *:last-child {
   margin: none;
+}
+`;
+
+const a = `
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
 }
 `;
 
@@ -58,6 +65,8 @@ html, body {
 
 ${row}
 
+${a}
+
 ${calendar}
 ${calendarEventStyles}
 ${calendarCustom}
@@ -73,6 +82,7 @@ ${indicatorsPage}
 
 ${input}
 ${button}
+${link}
 ${simpleSelect}
 
 

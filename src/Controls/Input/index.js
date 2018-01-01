@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import cn from 'classnames';
 
-export default class extends Component {
+class Input extends Component {
 
   render() {
     const {
@@ -16,3 +16,5 @@ export default class extends Component {
     )
   }
 }
+
+export default Input;

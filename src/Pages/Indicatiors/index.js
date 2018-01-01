@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { Container, Row, Col } from "react-grid-system";
 
 import InfoLegend from "../../Components/InfoLegend";
 import PieChart from "../../Components/PieChart";
+import Link from "../../Controls/Link";
 
 import {
   colors,
@@ -9,20 +11,86 @@ import {
   shadeBlendConvert
 } from "../../theme/colors";
 
-import fakeData from './fakePieChartData'
+import fakeData, { linksData } from "./fakePieChartData";
 
 export default class extends Component {
   render() {
     return (
       <section className="cr-indicators-page">
-        <div className="cr-row">
-          <InfoLegend text="TOTAL GENERAL" value="7,156" color={styleGuideColors.slateGreyTwo} />
-          <InfoLegend text="PORCENTAJE DE ATENCIÓN GENERAL" value="81.61%" color={styleGuideColors.emeraldGreen} />
-          <InfoLegend text="AÑO" value="2017" color={styleGuideColors.slateGreyTwo} />
-        </div>
-        <div className="cr-row">
-          {fakeData.map((fd, i) => <PieChart {...fd} key={i} />)}
-        </div>
+        <Container fluid>
+          <Row align="center">
+            <Col
+              lg={3}
+              style={{
+                marginTop: "1rem",
+                justifyContent: "center",
+                display: "flex"
+              }}
+            >
+              <InfoLegend
+                text="TOTAL GENERAL"
+                value="7,156"
+                color={styleGuideColors.slateGreyTwo}
+              />
+            </Col>
+            <Col
+              lg={6}
+              style={{
+                marginTop: "1rem",
+                justifyContent: "center",
+                display: "flex"
+              }}
+            >
+              <InfoLegend
+                text="PORCENTAJE DE ATENCIÓN GENERAL"
+                value="81.61%"
+                color={styleGuideColors.emeraldGreen}
+              />
+            </Col>
+            <Col
+              lg={3}
+              style={{
+                marginTop: "1rem",
+                justifyContent: "center",
+                display: "flex"
+              }}
+            >
+              <InfoLegend
+                text="AÑO"
+                value="2017"
+                color={styleGuideColors.slateGreyTwo}
+              />
+            </Col>
+          </Row>
+
+          <Row>
+            {fakeData.map((fd, i) => (
+              <Col
+                lg={6}
+                style={{
+                  marginTop: "1rem",
+                  justifyContent: "center",
+                  display: "flex"
+                }}
+                key={i}
+              >
+                <PieChart {...fd} />
+              </Col>
+            ))}
+          </Row>
+          <Row>
+            <Col
+              className="cr-row"
+              lg={12}
+            >
+              {linksData.map(({ href, children }, i) => (
+                <Link href={href} key={i}>
+                  {children}
+                </Link>
+              ))}
+            </Col>
+          </Row>
+        </Container>
       </section>
     );
   }

@@ -12,6 +12,8 @@ export default `
   font-size: 0.75rem;
   padding: 1rem 0.75rem;
   align-items: center;
+  width: 100%;
+  max-width: 22rem;
 }
 
 .cr-info-legend .cr-info-legend-value {
