@@ -1,3 +1,5 @@
+import AccordsPage from "./Accords";
+
 import DirectionPage from "./Direction";
 import DirectionQueryPage from "./Direction/Query";
 
@@ -8,4 +10,4 @@ import LoginPage from "./Login";
 
 import IndicatorsPage from "./Indicatiors";
 
-export { DirectionPage, DirectionQueryPage, LoginPage, IndicatorsPage, OpinionsPage, NewOpinionPage };
+export { AccordsPage, DirectionPage, DirectionQueryPage, LoginPage, IndicatorsPage, OpinionsPage, NewOpinionPage };

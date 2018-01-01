@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import {
+  AccordsPage,
   DirectionPage,
   LoginPage,
   DirectionQueryPage,
@@ -12,6 +13,7 @@ import {
 
 export default (
   <Switch>
+    <Route path="/accords/sent" component={AccordsPage} />,
     <Route path="/opinions/create" component={NewOpinionPage} />,
     <Route path="/opinions" component={OpinionsPage} />,
     <Route path="/direction/query" component={DirectionQueryPage} />,
