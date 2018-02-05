@@ -25,6 +25,7 @@ import loginPage from "./Pages/Login/styles";
 import directionPage from "./Pages/Direction/styles";
 import indicatorsPage from "./Pages/Indicatiors/styles";
 import newOpinionPage from "./Pages/Opinions/Create/styles";
+import {styleGuideColors} from "./theme/colors";
 
 const row = `
 .cr-row {
@@ -57,6 +58,7 @@ html, body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: ${styleGuideColors.whiteTwo};
 }
 
 .App * {
